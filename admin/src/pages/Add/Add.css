@@ -1,0 +1,99 @@
+/* General Styles */
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9fafb;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 8px;
+  }
+  
+  input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  }
+  
+  /* Image Upload */
+  .add-image-upload {
+    align-items: center;
+  }
+  
+  label img {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    border: 2px dashed #d1d5db;
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.3s;
+  }
+  
+  label img:hover {
+    border-color: #3b82f6;
+  }
+  
+  /* Category and Price */
+  .add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .add-category, .add-size, .add-price {
+    flex: 1;
+  }
+  
+  /* Button Styles */
+  .add-btn {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .add-category-price {
+      flex-direction: column;
+    }
+  
+    form {
+      padding: 20px;
+    }
+  }
+  

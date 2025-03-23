@@ -1,0 +1,120 @@
+/* Table Styles */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 500px; /* Fixed height for the table container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.list-table-format {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+  gap: 20px; /* Consistent gap between all elements */
+}
+
+.list-table-format:hover {
+  background-color: #f5f5f5;
+}
+
+/* Title (Header Row) Styling */
+.list-table-format.title {
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the container */
+  z-index: 1; /* Ensure the header stays above the content */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.list-table-format.title b {
+  flex: 5;
+  padding: 10px; /* Add padding for spacing */
+  text-align: center; /* Center align the text */
+}
+
+/* Content (Body) Row Styling */
+.list-table-format img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px; /* Space after the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the image */
+}
+
+.list-table-format p {
+  flex: 1;
+  text-align: center; /* Center the text */
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  padding: 0 10px;
+}
+
+/* Button Styles */
+.list-table-format button {
+  padding: 6px 12px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.list-table-format button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list-table {
+    max-height: 400px;
+  }
+
+  .list-table-format {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .list-table-format.title {
+    display: none;
+  }
+
+  .list-table-format img {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .list-table-format p {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .list-table-format button {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

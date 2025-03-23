@@ -1,0 +1,90 @@
+/* Food Container */
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* Increased gap for proper spacing */
+  padding: 20px;
+  align-items: stretch; /* Ensures uniform height alignment */
+}
+
+/* Food Item */
+.food-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #d9d5d5;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 280px; 
+  text-align: center;
+  min-height: 380px; /* Ensures all items have the same height */
+  margin-bottom: 30px; /* Adds vertical spacing */
+}
+
+/* Size Selector */
+.food-item-sizes {
+  width: 100%;
+  text-align: center;
+  margin-top: auto; /* Pushes to bottom for alignment */
+}
+
+.food-item-sizes select {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 80%; /* Ensures uniform dropdown width */
+}
+
+.food-item-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px; /* Slimmer padding */
+  background-color: #d5dbdb;
+  border-radius: 80px;
+  width: fit-content;
+  margin: 10px auto 0;
+  gap: 6px;
+}
+
+.food-item-counter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; /* Ensure equal size */
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+}
+
+
+/* Counter Icons */
+.food-item-counter img {
+  width: 24px; /* Slightly smaller icons for better balance */
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Counter Text */
+.food-item-counter span {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.add-container {
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  top: 20px; /* Adjust the value as needed */
+}
